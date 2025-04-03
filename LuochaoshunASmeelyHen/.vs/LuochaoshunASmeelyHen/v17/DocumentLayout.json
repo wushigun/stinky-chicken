@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\LuChaoShunASmellyHen\\stinky-chicken\\LuochaoshunASmeelyHen\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2573C0A2-01DF-7F9F-7CD8-62B59C07C74E}|Assembly-CSharp.csproj|d:\\luchaoshunasmellyhen\\stinky-chicken\\luochaoshunasmeelyhen\\assets\\roadtile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2573C0A2-01DF-7F9F-7CD8-62B59C07C74E}|Assembly-CSharp.csproj|solutionrelative:assets\\roadtile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2573C0A2-01DF-7F9F-7CD8-62B59C07C74E}|Assembly-CSharp.csproj|d:\\luchaoshunasmellyhen\\stinky-chicken\\luochaoshunasmeelyhen\\assets\\tile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2573C0A2-01DF-7F9F-7CD8-62B59C07C74E}|Assembly-CSharp.csproj|solutionrelative:assets\\tile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "RoadTile.cs",
+              "DocumentMoniker": "D:\\LuChaoShunASmellyHen\\stinky-chicken\\LuochaoshunASmeelyHen\\Assets\\RoadTile.cs",
+              "RelativeDocumentMoniker": "Assets\\RoadTile.cs",
+              "ToolTip": "D:\\LuChaoShunASmellyHen\\stinky-chicken\\LuochaoshunASmeelyHen\\Assets\\RoadTile.cs",
+              "RelativeToolTip": "Assets\\RoadTile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-03T14:57:13.694Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Tile.cs",
+              "DocumentMoniker": "D:\\LuChaoShunASmellyHen\\stinky-chicken\\LuochaoshunASmeelyHen\\Assets\\Tile.cs",
+              "RelativeDocumentMoniker": "Assets\\Tile.cs",
+              "ToolTip": "D:\\LuChaoShunASmellyHen\\stinky-chicken\\LuochaoshunASmeelyHen\\Assets\\Tile.cs",
+              "RelativeToolTip": "Assets\\Tile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-03T13:44:31.374Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
