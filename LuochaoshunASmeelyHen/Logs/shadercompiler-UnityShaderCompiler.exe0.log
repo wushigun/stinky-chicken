@@ -1,3 +1,9 @@
+<<<<<<< HEAD
 Base path: 'D:/Unity/2022.3.55f1c1/Editor/Data', plugins path 'D:/Unity/2022.3.55f1c1/Editor/Data/PlaybackEngines'
 Cmd: initializeCompiler
 
+=======
+Base path: 'D:/unity版本/安装/2022.3.55f1c1/Editor/Data', plugins path 'D:/unity版本/安装/2022.3.55f1c1/Editor/Data/PlaybackEngines'
+Cmd: initializeCompiler
+
+>>>>>>> db5ef899bcbe2ecaf468cc57b36e09ca5c85a951
