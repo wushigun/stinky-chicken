@@ -12,4 +12,5 @@ public class RoadTile
     public byte noiseLevel, airPolLevel;
     public byte congetion;
     public byte policeCov, healthcareCov, fireCov, EduICov, EduIICov, amusementCov, parkCov;//Cov = coverage, Edu = Education
+	public bool RC,LC,UC,DC;//R=right L=left U=up D=down c=Connection
 }
