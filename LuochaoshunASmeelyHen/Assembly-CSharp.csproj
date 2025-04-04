@@ -64,6 +64,7 @@
     <Compile Include="Assets\Scripts\RoadTile.cs" />
     <Compile Include="Assets\Scripts\Tile.cs" />
     <Compile Include="Assets\Scripts\Chouji.cs" />
+    <Compile Include="Assets\Scripts\Citizen.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
   </ItemGroup>
   <ItemGroup>
