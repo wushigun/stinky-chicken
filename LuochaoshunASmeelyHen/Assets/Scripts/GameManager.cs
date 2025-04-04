@@ -5,15 +5,18 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
 	public GameObject Building;
-    public void Updata()
+    public void Update()
 	{
-		Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-		RaycastHit hit;
-		if(Physics.Raycast(ray,out hit))
+		if(Input.GetMouseButton(0))
 		{
-			if(hit.collider.gameObject.tag=="map")
+			Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+			RaycastHit hit;
+			if(Physics.Raycast(ray,out hit))
 			{
-				Instantiate(Building,new Vector3(Mathf.Floor(hit.point.x),Mathf.Floor(hit.point.y),hit.point.z),Quaternion.identity);
+				if(hit.collider.gameObject.tag=="map")
+				{
+					Instantiate(Building,new Vector3(Mathf.Floor(hit.point.x),0,Mathf.Floor(hit.point.z)),Quaternion.identity);
+				}
 			}
 		}
 	}
