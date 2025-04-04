@@ -353,9 +353,10 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
 -analyzer:"D:/Unity/2022.3.55f1c1/Editor/Data/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll"
 -analyzer:"D:/Unity/2022.3.55f1c1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
-"Assets/Chouji.cs"
-"Assets/RoadTile.cs"
-"Assets/Tile.cs"
+"Assets/Scripts/CameraMovement.cs"
+"Assets/Scripts/GameManager.cs"
+"Assets/Scripts/RoadTile.cs"
+"Assets/Scripts/Tile.cs"
 -langversion:9.0
 /deterministic
 /optimize+
