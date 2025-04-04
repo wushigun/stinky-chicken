@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "D:\\LuChaoShunASmellyHen\\stinky-chicken\\LuochaoshunASmeelyHen\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2573C0A2-01DF-7F9F-7CD8-62B59C07C74E}|Assembly-CSharp.csproj|d:\\luchaoshunasmellyhen\\stinky-chicken\\luochaoshunasmeelyhen\\assets\\roadtile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2573C0A2-01DF-7F9F-7CD8-62B59C07C74E}|Assembly-CSharp.csproj|solutionrelative:assets\\roadtile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2573C0A2-01DF-7F9F-7CD8-62B59C07C74E}|Assembly-CSharp.csproj|d:\\luchaoshunasmellyhen\\stinky-chicken\\luochaoshunasmeelyhen\\assets\\scripts\\cameramovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2573C0A2-01DF-7F9F-7CD8-62B59C07C74E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\cameramovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2573C0A2-01DF-7F9F-7CD8-62B59C07C74E}|Assembly-CSharp.csproj|d:\\luchaoshunasmellyhen\\stinky-chicken\\luochaoshunasmeelyhen\\assets\\tile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2573C0A2-01DF-7F9F-7CD8-62B59C07C74E}|Assembly-CSharp.csproj|solutionrelative:assets\\tile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2573C0A2-01DF-7F9F-7CD8-62B59C07C74E}|Assembly-CSharp.csproj|d:\\luchaoshunasmellyhen\\stinky-chicken\\luochaoshunasmeelyhen\\assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2573C0A2-01DF-7F9F-7CD8-62B59C07C74E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,27 +23,27 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "RoadTile.cs",
-              "DocumentMoniker": "D:\\LuChaoShunASmellyHen\\stinky-chicken\\LuochaoshunASmeelyHen\\Assets\\RoadTile.cs",
-              "RelativeDocumentMoniker": "Assets\\RoadTile.cs",
-              "ToolTip": "D:\\LuChaoShunASmellyHen\\stinky-chicken\\LuochaoshunASmeelyHen\\Assets\\RoadTile.cs",
-              "RelativeToolTip": "Assets\\RoadTile.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Title": "CameraMovement.cs",
+              "DocumentMoniker": "D:\\LuChaoShunASmellyHen\\stinky-chicken\\LuochaoshunASmeelyHen\\Assets\\Scripts\\CameraMovement.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\CameraMovement.cs",
+              "ToolTip": "D:\\LuChaoShunASmellyHen\\stinky-chicken\\LuochaoshunASmeelyHen\\Assets\\Scripts\\CameraMovement.cs",
+              "RelativeToolTip": "Assets\\Scripts\\CameraMovement.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAB1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-03T14:57:13.694Z",
+              "WhenOpened": "2025-04-04T04:55:21.109Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Tile.cs",
-              "DocumentMoniker": "D:\\LuChaoShunASmellyHen\\stinky-chicken\\LuochaoshunASmeelyHen\\Assets\\Tile.cs",
-              "RelativeDocumentMoniker": "Assets\\Tile.cs",
-              "ToolTip": "D:\\LuChaoShunASmellyHen\\stinky-chicken\\LuochaoshunASmeelyHen\\Assets\\Tile.cs",
-              "RelativeToolTip": "Assets\\Tile.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Title": "GameManager.cs",
+              "DocumentMoniker": "D:\\LuChaoShunASmellyHen\\stinky-chicken\\LuochaoshunASmeelyHen\\Assets\\Scripts\\GameManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\GameManager.cs",
+              "ToolTip": "D:\\LuChaoShunASmellyHen\\stinky-chicken\\LuochaoshunASmeelyHen\\Assets\\Scripts\\GameManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\GameManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-03T13:44:31.374Z",
+              "WhenOpened": "2025-04-04T04:55:00.142Z",
               "EditorCaption": ""
             }
           ]

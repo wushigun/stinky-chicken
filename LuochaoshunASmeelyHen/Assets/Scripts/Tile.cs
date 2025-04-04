@@ -14,7 +14,6 @@ public class Tile
     public bool isPowered, isWatered;
 
 }
-[System.Serializable]
 
 public enum TerrainType : byte
 {
