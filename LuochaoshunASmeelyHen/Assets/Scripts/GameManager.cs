@@ -43,13 +43,25 @@ public class GameManager : MonoBehaviour
 					}
 					Vector2 d = p - before;
 					if(d==Vector2.left)
+					{
 						Rmap[before].LC = true;
+						Rmap[p].RC = true;
+					}
 					if(d==Vector2.right)
+					{
 						Rmap[before].RC = true;
+						Rmap[p].LC = true;
+					}
 					if(d==Vector2.down)
+					{
 						Rmap[before].DC = true;
+						Rmap[p].UC = true;
+					}
 					if(d==Vector2.up)
+					{
 						Rmap[before].UC = true;
+						Rmap[p].DC = true;
+					}
 					before = p;
 				}
 			}
