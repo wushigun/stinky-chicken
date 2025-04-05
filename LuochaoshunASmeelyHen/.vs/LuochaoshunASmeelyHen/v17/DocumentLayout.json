@@ -1,21 +1,21 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\LuChaoShunASmellyHen\\stinky-chicken\\LuochaoshunASmeelyHen\\",
+  "WorkspaceRootPath": "E:\\\u65B0\u5EFA\u6587\u4EF6\u5939\\stinky-chicken\\LuochaoshunASmeelyHen\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2573C0A2-01DF-7F9F-7CD8-62B59C07C74E}|Assembly-CSharp.csproj|d:\\luchaoshunasmellyhen\\stinky-chicken\\luochaoshunasmeelyhen\\assets\\scripts\\citizen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2573C0A2-01DF-7F9F-7CD8-62B59C07C74E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\citizen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2573C0A2-01DF-7F9F-7CD8-62B59C07C74E}|Assembly-CSharp.csproj|D:\\LuChaoShunASmellyHen\\stinky-chicken\\LuochaoshunASmeelyHen\\assets\\scripts\\cameramovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2573C0A2-01DF-7F9F-7CD8-62B59C07C74E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\cameramovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2573C0A2-01DF-7F9F-7CD8-62B59C07C74E}|Assembly-CSharp.csproj|d:\\luchaoshunasmellyhen\\stinky-chicken\\luochaoshunasmeelyhen\\assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{2573C0A2-01DF-7F9F-7CD8-62B59C07C74E}|Assembly-CSharp.csproj|E:\\\u65B0\u5EFA\u6587\u4EF6\u5939\\stinky-chicken\\LuochaoshunASmeelyHen\\assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2573C0A2-01DF-7F9F-7CD8-62B59C07C74E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2573C0A2-01DF-7F9F-7CD8-62B59C07C74E}|Assembly-CSharp.csproj|D:\\LuChaoShunASmellyHen\\stinky-chicken\\LuochaoshunASmeelyHen\\assets\\scripts\\chouji.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{2573C0A2-01DF-7F9F-7CD8-62B59C07C74E}|Assembly-CSharp.csproj|e:\\\u65B0\u5EFA\u6587\u4EF6\u5939\\stinky-chicken\\luochaoshunasmeelyhen\\assets\\scripts\\citizen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2573C0A2-01DF-7F9F-7CD8-62B59C07C74E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\citizen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2573C0A2-01DF-7F9F-7CD8-62B59C07C74E}|Assembly-CSharp.csproj|E:\\\u65B0\u5EFA\u6587\u4EF6\u5939\\stinky-chicken\\LuochaoshunASmeelyHen\\assets\\scripts\\cameramovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2573C0A2-01DF-7F9F-7CD8-62B59C07C74E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\cameramovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2573C0A2-01DF-7F9F-7CD8-62B59C07C74E}|Assembly-CSharp.csproj|E:\\\u65B0\u5EFA\u6587\u4EF6\u5939\\stinky-chicken\\LuochaoshunASmeelyHen\\assets\\scripts\\chouji.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2573C0A2-01DF-7F9F-7CD8-62B59C07C74E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\chouji.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -26,15 +26,15 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "Chouji.cs",
-              "DocumentMoniker": "D:\\LuChaoShunASmellyHen\\stinky-chicken\\LuochaoshunASmeelyHen\\Assets\\Scripts\\Chouji.cs",
+              "DocumentMoniker": "E:\\\u65B0\u5EFA\u6587\u4EF6\u5939\\stinky-chicken\\LuochaoshunASmeelyHen\\Assets\\Scripts\\Chouji.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Chouji.cs",
-              "ToolTip": "D:\\LuChaoShunASmellyHen\\stinky-chicken\\LuochaoshunASmeelyHen\\Assets\\Scripts\\Chouji.cs",
+              "ToolTip": "E:\\\u65B0\u5EFA\u6587\u4EF6\u5939\\stinky-chicken\\LuochaoshunASmeelyHen\\Assets\\Scripts\\Chouji.cs",
               "RelativeToolTip": "Assets\\Scripts\\Chouji.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -42,12 +42,16 @@
               "IsPinned": true
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Citizen.cs",
-              "DocumentMoniker": "D:\\LuChaoShunASmellyHen\\stinky-chicken\\LuochaoshunASmeelyHen\\Assets\\Scripts\\Citizen.cs",
+              "DocumentMoniker": "E:\\\u65B0\u5EFA\u6587\u4EF6\u5939\\stinky-chicken\\LuochaoshunASmeelyHen\\Assets\\Scripts\\Citizen.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Citizen.cs",
-              "ToolTip": "D:\\LuChaoShunASmellyHen\\stinky-chicken\\LuochaoshunASmeelyHen\\Assets\\Scripts\\Citizen.cs",
+              "ToolTip": "E:\\\u65B0\u5EFA\u6587\u4EF6\u5939\\stinky-chicken\\LuochaoshunASmeelyHen\\Assets\\Scripts\\Citizen.cs",
               "RelativeToolTip": "Assets\\Scripts\\Citizen.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACcAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -56,26 +60,25 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "CameraMovement.cs",
-              "DocumentMoniker": "D:\\LuChaoShunASmellyHen\\stinky-chicken\\LuochaoshunASmeelyHen\\Assets\\Scripts\\CameraMovement.cs",
+              "DocumentMoniker": "E:\\\u65B0\u5EFA\u6587\u4EF6\u5939\\stinky-chicken\\LuochaoshunASmeelyHen\\Assets\\Scripts\\CameraMovement.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\CameraMovement.cs",
-              "ToolTip": "D:\\LuChaoShunASmellyHen\\stinky-chicken\\LuochaoshunASmeelyHen\\Assets\\Scripts\\CameraMovement.cs",
+              "ToolTip": "E:\\\u65B0\u5EFA\u6587\u4EF6\u5939\\stinky-chicken\\LuochaoshunASmeelyHen\\Assets\\Scripts\\CameraMovement.cs",
               "RelativeToolTip": "Assets\\Scripts\\CameraMovement.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-04T04:55:21.109Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-04T04:55:21.109Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "GameManager.cs",
-              "DocumentMoniker": "D:\\LuChaoShunASmellyHen\\stinky-chicken\\LuochaoshunASmeelyHen\\Assets\\Scripts\\GameManager.cs",
+              "DocumentMoniker": "E:\\\u65B0\u5EFA\u6587\u4EF6\u5939\\stinky-chicken\\LuochaoshunASmeelyHen\\Assets\\Scripts\\GameManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\GameManager.cs",
-              "ToolTip": "D:\\LuChaoShunASmellyHen\\stinky-chicken\\LuochaoshunASmeelyHen\\Assets\\Scripts\\GameManager.cs",
+              "ToolTip": "E:\\\u65B0\u5EFA\u6587\u4EF6\u5939\\stinky-chicken\\LuochaoshunASmeelyHen\\Assets\\Scripts\\GameManager.cs",
               "RelativeToolTip": "Assets\\Scripts\\GameManager.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAAACsAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAACsAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-04T04:55:00.142Z",
               "EditorCaption": ""

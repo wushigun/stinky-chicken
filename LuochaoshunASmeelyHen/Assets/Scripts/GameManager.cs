@@ -42,21 +42,6 @@ public class GameManager : MonoBehaviour
 						Rmap.Add(p,m_rtile);
 					}
 					Vector2 d = p - before;
-<<<<<<< HEAD
-					if(d==Vector2.left || d == Vector2.right)
-					{
-                        Rmap[before].LC = true;
-                        Rmap[before].RC = true;
-
-                    }
-                    if (d==Vector2.down || d == Vector2.up)
-					{
-                        Rmap[before].DC = true;
-                        Rmap[before].UC = true;
-
-                    }
-                    before = p;
-=======
 					if(d==Vector2.left)
 					{
 						Rmap[before].LC = true;
@@ -78,7 +63,6 @@ public class GameManager : MonoBehaviour
 						Rmap[p].DC = true;
 					}
 					before = p;
->>>>>>> 8ff2de93e4267467e996a8f0ae3edc55247052d6
 				}
 			}
 		}
