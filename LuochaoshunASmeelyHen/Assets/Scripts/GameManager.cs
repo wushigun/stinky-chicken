@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour
 	public int width,height;
 	public Color RRoad,DRoad,LRoad,URoad,nRoad;
 	public Renderer mapRenderer;
+	public Navigation Navigation;
 	void Start()
 	{
 		for(int i=0;i<width;i++)

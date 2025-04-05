@@ -16,23 +16,53 @@ public class Navigation : MonoBehaviour
         Dictionary<visPoint,visPoint> parentDictionary = new Dictionary<visPoint,visPoint>();
         List<visPoint> checkedDictionary = new();
 
-        priorityQuene.Add(points[start], 0);
+        priorityQuene.Add(points[start], 0);//ni zhe zhi chou ji 
 
         while (priorityQuene.Count > 0)
         { 
             visPoint curPoint = GetLeastCostPoint(priorityQuene);
             if (curPoint == points[end])
-                return GetPath(parentDictionary);
-            priorityQuene.Remove(curPoint);
+                return GetPath(parentDictionary, points[end], points[start]);
             checkedDictionary.Add(curPoint);
 
+            foreach (visStraight vs in curPoint.road)
+            {
+                visPoint vp = vs.endPoint;
 
+                if (checkedDictionary.Contains(vp))
+                    continue;
+
+                float cost = priorityQuene[vp]+vs.distanceCost+ManhattanDistance(vp.pos,end);
+                if (priorityQuene.ContainsKey(vp))
+                {
+                    if (cost < priorityQuene[vp])
+                    {
+                        priorityQuene[vp] = cost;
+                        parentDictionary[vp] = curPoint;
+                    }
+                }
+                else
+                {
+                    priorityQuene.Add(vp, cost);
+                    parentDictionary.Add(vp, curPoint);
+                }
+            }
+            priorityQuene.Remove(curPoint);
         }
         return null;
     }
-    public List<visPoint> GetPath(Dictionary<visPoint, visPoint> parentDictionary)
+    public List<visPoint> GetPath(Dictionary<visPoint, visPoint> parentDictionary,visPoint end,visPoint start)
     {
-        return null;
+        List<visPoint> path = new List<visPoint>();
+        visPoint vp = parentDictionary[end];
+        while (parentDictionary.ContainsKey(vp))
+        { 
+            path.Add(vp);
+            vp = parentDictionary[vp];
+        }
+        if (vp != start)
+            path = null;
+        return path;
     }
     public visPoint GetLeastCostPoint(Dictionary<visPoint, float> priorityQuene)
     {
@@ -51,7 +81,9 @@ public class Navigation : MonoBehaviour
     }
     public void addPoint(Vector2 pos)
     {
-        points.Add(pos, new());
+        visPoint vp = new visPoint();
+        vp.pos = pos;
+        points.Add(pos, vp);
     }
     public void addRoad(Vector2 start, Vector2 end, bool isBil)
     { 
@@ -64,6 +96,7 @@ public class Navigation : MonoBehaviour
 }
 public class visPoint
 {
+    public Vector2 pos;
     public List<visStraight> road=new();
     public void addRoad(visPoint endpoint,float distance)
     {
@@ -71,6 +104,18 @@ public class visPoint
         newStraight.endPoint = endpoint;
         newStraight.distanceCost = distance;
         road.Add(newStraight);
+    }
+    public void removeRoad(visStraight vs)
+    {
+        vs.endPoint.road.Remove(vs);
+        road.Remove(vs);
+    }
+    public void removeAllRoad()
+    {
+        for (int i = 0; i < road.Count; i++)
+        { 
+            removeRoad(road[i]);
+        }
     }
 }
 public class visStraight
