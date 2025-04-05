@@ -1,21 +1,29 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\LuChaoShunASmellyHen\\stinky-chicken\\LuochaoshunASmeelyHen\\",
+  "WorkspaceRootPath": "E:\\\u65B0\u5EFA\u6587\u4EF6\u5939\\stinky-chicken\\LuochaoshunASmeelyHen\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2573C0A2-01DF-7F9F-7CD8-62B59C07C74E}|Assembly-CSharp.csproj|d:\\luchaoshunasmellyhen\\stinky-chicken\\luochaoshunasmeelyhen\\assets\\scripts\\citizen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2573C0A2-01DF-7F9F-7CD8-62B59C07C74E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\citizen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2573C0A2-01DF-7F9F-7CD8-62B59C07C74E}|Assembly-CSharp.csproj|e:\\\u65B0\u5EFA\u6587\u4EF6\u5939\\stinky-chicken\\luochaoshunasmeelyhen\\assets\\scripts\\navigation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2573C0A2-01DF-7F9F-7CD8-62B59C07C74E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\navigation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2573C0A2-01DF-7F9F-7CD8-62B59C07C74E}|Assembly-CSharp.csproj|D:\\LuChaoShunASmellyHen\\stinky-chicken\\LuochaoshunASmeelyHen\\assets\\scripts\\cameramovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2573C0A2-01DF-7F9F-7CD8-62B59C07C74E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\cameramovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2573C0A2-01DF-7F9F-7CD8-62B59C07C74E}|Assembly-CSharp.csproj|E:\\\u65B0\u5EFA\u6587\u4EF6\u5939\\stinky-chicken\\LuochaoshunASmeelyHen\\assets\\scripts\\gridsearch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2573C0A2-01DF-7F9F-7CD8-62B59C07C74E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gridsearch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2573C0A2-01DF-7F9F-7CD8-62B59C07C74E}|Assembly-CSharp.csproj|d:\\luchaoshunasmellyhen\\stinky-chicken\\luochaoshunasmeelyhen\\assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{2573C0A2-01DF-7F9F-7CD8-62B59C07C74E}|Assembly-CSharp.csproj|E:\\\u65B0\u5EFA\u6587\u4EF6\u5939\\stinky-chicken\\LuochaoshunASmeelyHen\\assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2573C0A2-01DF-7F9F-7CD8-62B59C07C74E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2573C0A2-01DF-7F9F-7CD8-62B59C07C74E}|Assembly-CSharp.csproj|D:\\LuChaoShunASmellyHen\\stinky-chicken\\LuochaoshunASmeelyHen\\assets\\scripts\\chouji.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{2573C0A2-01DF-7F9F-7CD8-62B59C07C74E}|Assembly-CSharp.csproj|E:\\\u65B0\u5EFA\u6587\u4EF6\u5939\\stinky-chicken\\LuochaoshunASmeelyHen\\assets\\scripts\\citizen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2573C0A2-01DF-7F9F-7CD8-62B59C07C74E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\citizen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2573C0A2-01DF-7F9F-7CD8-62B59C07C74E}|Assembly-CSharp.csproj|E:\\\u65B0\u5EFA\u6587\u4EF6\u5939\\stinky-chicken\\LuochaoshunASmeelyHen\\assets\\scripts\\cameramovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2573C0A2-01DF-7F9F-7CD8-62B59C07C74E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\cameramovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2573C0A2-01DF-7F9F-7CD8-62B59C07C74E}|Assembly-CSharp.csproj|E:\\\u65B0\u5EFA\u6587\u4EF6\u5939\\stinky-chicken\\LuochaoshunASmeelyHen\\assets\\scripts\\chouji.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2573C0A2-01DF-7F9F-7CD8-62B59C07C74E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\chouji.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -30,11 +38,11 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "Chouji.cs",
-              "DocumentMoniker": "D:\\LuChaoShunASmellyHen\\stinky-chicken\\LuochaoshunASmeelyHen\\Assets\\Scripts\\Chouji.cs",
+              "DocumentMoniker": "E:\\\u65B0\u5EFA\u6587\u4EF6\u5939\\stinky-chicken\\LuochaoshunASmeelyHen\\Assets\\Scripts\\Chouji.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Chouji.cs",
-              "ToolTip": "D:\\LuChaoShunASmellyHen\\stinky-chicken\\LuochaoshunASmeelyHen\\Assets\\Scripts\\Chouji.cs",
+              "ToolTip": "E:\\\u65B0\u5EFA\u6587\u4EF6\u5939\\stinky-chicken\\LuochaoshunASmeelyHen\\Assets\\Scripts\\Chouji.cs",
               "RelativeToolTip": "Assets\\Scripts\\Chouji.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -44,41 +52,67 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Citizen.cs",
-              "DocumentMoniker": "D:\\LuChaoShunASmellyHen\\stinky-chicken\\LuochaoshunASmeelyHen\\Assets\\Scripts\\Citizen.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Citizen.cs",
-              "ToolTip": "D:\\LuChaoShunASmellyHen\\stinky-chicken\\LuochaoshunASmeelyHen\\Assets\\Scripts\\Citizen.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Citizen.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACcAAAABAAAAAAAAAA==",
+              "Title": "Navigation.cs",
+              "DocumentMoniker": "E:\\\u65B0\u5EFA\u6587\u4EF6\u5939\\stinky-chicken\\LuochaoshunASmeelyHen\\Assets\\Scripts\\Navigation.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Navigation.cs",
+              "ToolTip": "E:\\\u65B0\u5EFA\u6587\u4EF6\u5939\\stinky-chicken\\LuochaoshunASmeelyHen\\Assets\\Scripts\\Navigation.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Navigation.cs",
+              "ViewState": "AgIAAA8AAACgmZmZmdkhwBwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-04T13:27:42.331Z",
+              "WhenOpened": "2025-04-05T11:36:09.238Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "GridSearch.cs",
+              "DocumentMoniker": "E:\\\u65B0\u5EFA\u6587\u4EF6\u5939\\stinky-chicken\\LuochaoshunASmeelyHen\\Assets\\Scripts\\GridSearch.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\GridSearch.cs",
+              "ToolTip": "E:\\\u65B0\u5EFA\u6587\u4EF6\u5939\\stinky-chicken\\LuochaoshunASmeelyHen\\Assets\\Scripts\\GridSearch.cs",
+              "RelativeToolTip": "Assets\\Scripts\\GridSearch.cs",
+              "ViewState": "AgIAADQAAAAAMzMzMzMrwBMAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-05T11:36:35.078Z"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Citizen.cs",
+              "DocumentMoniker": "E:\\\u65B0\u5EFA\u6587\u4EF6\u5939\\stinky-chicken\\LuochaoshunASmeelyHen\\Assets\\Scripts\\Citizen.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Citizen.cs",
+              "ToolTip": "E:\\\u65B0\u5EFA\u6587\u4EF6\u5939\\stinky-chicken\\LuochaoshunASmeelyHen\\Assets\\Scripts\\Citizen.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Citizen.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-04T13:27:42.331Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "CameraMovement.cs",
-              "DocumentMoniker": "D:\\LuChaoShunASmellyHen\\stinky-chicken\\LuochaoshunASmeelyHen\\Assets\\Scripts\\CameraMovement.cs",
+              "DocumentMoniker": "E:\\\u65B0\u5EFA\u6587\u4EF6\u5939\\stinky-chicken\\LuochaoshunASmeelyHen\\Assets\\Scripts\\CameraMovement.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\CameraMovement.cs",
-              "ToolTip": "D:\\LuChaoShunASmellyHen\\stinky-chicken\\LuochaoshunASmeelyHen\\Assets\\Scripts\\CameraMovement.cs",
+              "ToolTip": "E:\\\u65B0\u5EFA\u6587\u4EF6\u5939\\stinky-chicken\\LuochaoshunASmeelyHen\\Assets\\Scripts\\CameraMovement.cs",
               "RelativeToolTip": "Assets\\Scripts\\CameraMovement.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-04T04:55:21.109Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-04T04:55:21.109Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "GameManager.cs",
-              "DocumentMoniker": "D:\\LuChaoShunASmellyHen\\stinky-chicken\\LuochaoshunASmeelyHen\\Assets\\Scripts\\GameManager.cs",
+              "DocumentMoniker": "E:\\\u65B0\u5EFA\u6587\u4EF6\u5939\\stinky-chicken\\LuochaoshunASmeelyHen\\Assets\\Scripts\\GameManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\GameManager.cs",
-              "ToolTip": "D:\\LuChaoShunASmellyHen\\stinky-chicken\\LuochaoshunASmeelyHen\\Assets\\Scripts\\GameManager.cs",
+              "ToolTip": "E:\\\u65B0\u5EFA\u6587\u4EF6\u5939\\stinky-chicken\\LuochaoshunASmeelyHen\\Assets\\Scripts\\GameManager.cs",
               "RelativeToolTip": "Assets\\Scripts\\GameManager.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAAACsAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAACIAAAAAAAAAAABBwCsAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-04T04:55:00.142Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-04T04:55:00.142Z"
             }
           ]
         }
