@@ -12,7 +12,7 @@ public class Tile
     public byte airPollution, landPollution, noisePollution;
     public ushort oil, mineral, wood, farm, windSpeed;
     public bool isPowered, isWatered;
-
+	public ZoneType zoneType;
 }
 
 public enum TerrainType : byte

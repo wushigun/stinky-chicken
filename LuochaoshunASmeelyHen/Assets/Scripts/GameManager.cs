@@ -9,8 +9,11 @@ public class GameManager : MonoBehaviour
 	public Dictionary<Vector2,RoadTile> Rmap = new Dictionary<Vector2,RoadTile>();
 	public int width,height;
 	public Color RRoad,DRoad,LRoad,URoad,nRoad;
+	public Color Resident;
 	public Renderer mapRenderer;
 	public Navigation Navigation;
+	
+	int mode=0;
 	void Start()
 	{
 		for(int i=0;i<width;i++)
@@ -25,7 +28,83 @@ public class GameManager : MonoBehaviour
 	Vector2 before;
     public void Update()
 	{
-		//铺路
+		switch(mode)
+		{
+			//道路
+			case 0:
+				BuildRoad();
+				DestroyRoad();
+				break;
+			case 1:
+				BuildZone();
+				DestroyZone();
+				break;
+		}
+	}
+	
+	
+	//<summary>导航</summary>
+	public void Navigate()
+	{
+		Navigation.UpdatePoints(Rmap);
+		List<visPoint> path = Navigation.SearchPath(Vector2.zero,new(width-1,height-1));
+		if(path!=null)
+		{
+			for(int i = 0;i<path.Count;i++)
+			{
+				Debug.Log(path[i].pos.x.ToString()+","+path[i].pos.y.ToString());
+			}
+		}
+	}
+	
+	//<summary>绘制地图</summary>
+	public void DrawMap()
+	{
+
+		Texture2D texture = new Texture2D(width,height);
+		Color[] colorMap = new Color[height*width];
+		for(int i=0;i<width;i++)
+		{
+			for(int j=0;j<height;j++)
+			{
+				if(Rmap!=null)
+				{
+					Vector2 p = new Vector2(i,j);
+					if(Rmap.ContainsKey(p))
+					{
+						Color c = Color.black;
+						if(Rmap[p].DC)
+							c+=DRoad;
+						if(Rmap[p].LC)
+							c+=LRoad;
+						if(Rmap[p].RC)
+							c+=RRoad;
+						if(Rmap[p].UC)
+							c+=URoad;
+						colorMap[i*width+j] = c;
+					}
+					else
+						colorMap[i*width+j] = nRoad;
+					if(map[p].zoneType==ZoneType.LowRes)
+						colorMap[i*width+j]=Resident;
+				}
+			}
+		}
+		texture.filterMode = FilterMode.Point;
+		texture.wrapMode = TextureWrapMode.Clamp;
+		texture.SetPixels(colorMap);
+		texture.Apply();
+		
+		mapRenderer.sharedMaterial.mainTexture = texture;
+		
+		mapRenderer.transform.localScale = new Vector3(width/10,1,height/10);
+		mapRenderer.transform.position = new Vector3(width/2,0,height/2);
+		
+	}
+	
+	//<summary>铺路</summary>
+	public void BuildRoad()
+	{
 		if(Input.GetMouseButtonDown(0))
 			before=new Vector2();
 		if(Input.GetMouseButton(0))
@@ -68,8 +147,11 @@ public class GameManager : MonoBehaviour
 				}
 			}
 		}
-		
-		//毁路
+	}
+	
+	//<summary>毁路</summary>
+	public void DestroyRoad()
+	{
 		if(Input.GetMouseButton(1))
 		{
 			Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
@@ -95,53 +177,49 @@ public class GameManager : MonoBehaviour
 				}
 			}
 		}
-		
-		//绘制地图
-		Texture2D texture = new Texture2D(width,height);
-		Color[] colorMap = new Color[height*width];
-		for(int i=0;i<width;i++)
+	}
+	
+	//<summary>规划(低)住宅区</summary>
+	public void BuildZone()
+	{
+		if(Input.GetMouseButton(0))
 		{
-			for(int j=0;j<height;j++)
+			Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+			RaycastHit hit;
+			if(Physics.Raycast(ray,out hit))
 			{
-				if(Rmap!=null)
+				if(hit.collider.gameObject.tag=="map")
 				{
-					Vector2 p = new Vector2(i,j);
-					if(Rmap.ContainsKey(p))
-					{
-						Color c = Color.black;
-						if(Rmap[p].DC)
-							c+=DRoad;
-						if(Rmap[p].LC)
-							c+=LRoad;
-						if(Rmap[p].RC)
-							c+=RRoad;
-						if(Rmap[p].UC)
-							c+=URoad;
-						colorMap[i*width+j] = c;
-					}
-					else
-						colorMap[i*width+j] = nRoad;
+					//Instantiate(Building,new Vector3(Mathf.Floor(hit.point.x),0,Mathf.Floor(hit.point.z)),Quaternion.identity);
+					Vector2 p =new Vector2(Mathf.Floor(hit.point.z),Mathf.Floor(hit.point.x));
+					map[p].zoneType = ZoneType.LowRes;
 				}
 			}
 		}
-		texture.filterMode = FilterMode.Point;
-		texture.wrapMode = TextureWrapMode.Clamp;
-		texture.SetPixels(colorMap);
-		texture.Apply();
-		
-		mapRenderer.sharedMaterial.mainTexture = texture;
-		
-		mapRenderer.transform.localScale = new Vector3(width/10,1,height/10);
-		mapRenderer.transform.position = new Vector3(width/2,0,height/2);
-		
-		/*Navigation.UpdatePoints(Rmap);
-		List<visPoint> path = Navigation.SearchPath(Vector2.zero,new(width-1,height-1));
-		if(path!=null)
+	}
+	
+	//<summary>取消规划</summary>
+	public void DestroyZone()
+	{
+		if(Input.GetMouseButton(1))
 		{
-			for(int i = 0;i<path.Count;i++)
+			Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+			RaycastHit hit;
+			if(Physics.Raycast(ray,out hit))
 			{
-				Debug.Log(path[i].pos.x.ToString()+","+path[i].pos.y.ToString());
+				if(hit.collider.gameObject.tag=="map")
+				{
+					//Instantiate(Building,new Vector3(Mathf.Floor(hit.point.x),0,Mathf.Floor(hit.point.z)),Quaternion.identity);
+					Vector2 p =new Vector2(Mathf.Floor(hit.point.z),Mathf.Floor(hit.point.x));
+					map[p].zoneType = ZoneType.Null;
+				}
 			}
-		}*/
+		}
+	}
+	
+	//0--道路 1--住宅
+	public void changeBuildMode(int order)
+	{
+		mode = order;
 	}
 }
