@@ -355,7 +355,9 @@
 -analyzer:"D:/unity版本/安装/2022.3.55f1c1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 "Assets/Scripts/CameraMovement.cs"
 "Assets/Scripts/Chouji.cs"
+"Assets/Scripts/Citizen.cs"
 "Assets/Scripts/GameManager.cs"
+"Assets/Scripts/Navigation.cs"
 "Assets/Scripts/RoadTile.cs"
 "Assets/Scripts/Tile.cs"
 -langversion:9.0

@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour
 	public int width,height;
 	public Color RRoad,DRoad,LRoad,URoad,nRoad;
 	public Renderer mapRenderer;
+	public Navigation Navigation;
 	void Start()
 	{
 		for(int i=0;i<width;i++)
@@ -24,6 +25,7 @@ public class GameManager : MonoBehaviour
 	Vector2 before;
     public void Update()
 	{
+		//铺路
 		if(Input.GetMouseButtonDown(0))
 			before=new Vector2();
 		if(Input.GetMouseButton(0))
@@ -66,6 +68,8 @@ public class GameManager : MonoBehaviour
 				}
 			}
 		}
+		
+		//毁路
 		if(Input.GetMouseButton(1))
 		{
 			Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
@@ -91,6 +95,8 @@ public class GameManager : MonoBehaviour
 				}
 			}
 		}
+		
+		//绘制地图
 		Texture2D texture = new Texture2D(width,height);
 		Color[] colorMap = new Color[height*width];
 		for(int i=0;i<width;i++)
@@ -124,7 +130,18 @@ public class GameManager : MonoBehaviour
 		texture.Apply();
 		
 		mapRenderer.sharedMaterial.mainTexture = texture;
+		
 		mapRenderer.transform.localScale = new Vector3(width/10,1,height/10);
 		mapRenderer.transform.position = new Vector3(width/2,0,height/2);
+		
+		/*Navigation.UpdatePoints(Rmap);
+		List<visPoint> path = Navigation.SearchPath(Vector2.zero,new(width-1,height-1));
+		if(path!=null)
+		{
+			for(int i = 0;i<path.Count;i++)
+			{
+				Debug.Log(path[i].pos.x.ToString()+","+path[i].pos.y.ToString());
+			}
+		}*/
 	}
 }
