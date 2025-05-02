@@ -3,11 +3,11 @@
   "WorkspaceRootPath": "E:\\\u65B0\u5EFA\u6587\u4EF6\u5939\\stinky-chicken\\LuochaoshunASmeelyHen\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2573C0A2-01DF-7F9F-7CD8-62B59C07C74E}|Assembly-CSharp.csproj|E:\\\u65B0\u5EFA\u6587\u4EF6\u5939\\stinky-chicken\\LuochaoshunASmeelyHen\\assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{2573C0A2-01DF-7F9F-7CD8-62B59C07C74E}|Assembly-CSharp.csproj|e:\\\u65B0\u5EFA\u6587\u4EF6\u5939\\stinky-chicken\\luochaoshunasmeelyhen\\assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2573C0A2-01DF-7F9F-7CD8-62B59C07C74E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2573C0A2-01DF-7F9F-7CD8-62B59C07C74E}|Assembly-CSharp.csproj|e:\\\u65B0\u5EFA\u6587\u4EF6\u5939\\stinky-chicken\\luochaoshunasmeelyhen\\assets\\scripts\\navigation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{2573C0A2-01DF-7F9F-7CD8-62B59C07C74E}|Assembly-CSharp.csproj|E:\\\u65B0\u5EFA\u6587\u4EF6\u5939\\stinky-chicken\\LuochaoshunASmeelyHen\\assets\\scripts\\navigation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2573C0A2-01DF-7F9F-7CD8-62B59C07C74E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\navigation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -63,8 +63,7 @@
               "RelativeToolTip": "Assets\\Scripts\\Navigation.cs",
               "ViewState": "AgIAAF4AAAAAAAAAAAAkwGIAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-05T11:36:09.238Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-05T11:36:09.238Z"
             },
             {
               "$type": "Document",
@@ -88,8 +87,7 @@
               "RelativeToolTip": "Assets\\Scripts\\Citizen.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACcAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-04T13:27:42.331Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-04T13:27:42.331Z"
             },
             {
               "$type": "Document",
@@ -111,7 +109,7 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\GameManager.cs",
               "ToolTip": "E:\\\u65B0\u5EFA\u6587\u4EF6\u5939\\stinky-chicken\\LuochaoshunASmeelyHen\\Assets\\Scripts\\GameManager.cs",
               "RelativeToolTip": "Assets\\Scripts\\GameManager.cs",
-              "ViewState": "AgIAAEYAAAAAmpmZmRkWwAYAAAARAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAZmZmZqYowCkAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-04T04:55:00.142Z",
               "EditorCaption": ""

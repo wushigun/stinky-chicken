@@ -9,10 +9,13 @@ public class GameManager : MonoBehaviour
 	public Dictionary<Vector2,RoadTile> Rmap = new Dictionary<Vector2,RoadTile>();
 	public int width,height;
 	public Color RRoad,DRoad,LRoad,URoad,nRoad;
-	public Color Resident;
+	public Color Resident,industry;
 	public Renderer mapRenderer;
 	public Navigation Navigation;
-	
+
+	public Dictionary<Citizen, Vector2> Citmap;
+
+
 	int mode=0;
 	void Start()
 	{
@@ -41,7 +44,17 @@ public class GameManager : MonoBehaviour
 				break;
 		}
 	}
-	
+
+	public int GetCitizensCount(Vector2 pos)
+	{ 
+		int count = 0;
+		foreach (Citizen citizen in Citmap.Keys)
+		{
+			if(Citmap[citizen]==pos)
+				count++;
+		}
+		return count;
+	}
 	
 	//<summary>导航</summary>
 	public void Navigate()
@@ -192,7 +205,8 @@ public class GameManager : MonoBehaviour
 				{
 					//Instantiate(Building,new Vector3(Mathf.Floor(hit.point.x),0,Mathf.Floor(hit.point.z)),Quaternion.identity);
 					Vector2 p =new Vector2(Mathf.Floor(hit.point.z),Mathf.Floor(hit.point.x));
-					map[p].zoneType = ZoneType.LowRes;
+					if(Rmap.ContainsKey(p))
+						map[p].zoneType = ZoneType.LowRes;
 				}
 			}
 		}

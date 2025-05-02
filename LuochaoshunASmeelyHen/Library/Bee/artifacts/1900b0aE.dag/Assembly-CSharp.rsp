@@ -357,6 +357,8 @@
 "Assets/Scripts/Chouji.cs"
 "Assets/Scripts/Citizen.cs"
 "Assets/Scripts/GameManager.cs"
+"Assets/Scripts/Industry.cs"
+"Assets/Scripts/MapGenerator.cs"
 "Assets/Scripts/Navigation.cs"
 "Assets/Scripts/RoadTile.cs"
 "Assets/Scripts/Tile.cs"

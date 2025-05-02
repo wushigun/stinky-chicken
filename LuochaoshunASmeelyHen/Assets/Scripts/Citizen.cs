@@ -7,7 +7,7 @@ public class Citizen
 {
     public float age, health, illbility;
     public byte happiness;
-
+    public Vector2 pos;
 }
 [System.Serializable]
 public class Family
