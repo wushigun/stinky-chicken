@@ -9,12 +9,22 @@ public class GameManager : MonoBehaviour
 	public Dictionary<Vector2,RoadTile> Rmap = new Dictionary<Vector2,RoadTile>();
 	public int width,height;
 	public Color RRoad,DRoad,LRoad,URoad,nRoad;
+<<<<<<< HEAD
 	public Color Resident,Industry;
 	public Renderer mapRenderer;
 	public Navigation Navigation;
 	
 	public List<Citizen> Citizens = new List<Citizen>();
 	
+=======
+	public Color Resident,industry;
+	public Renderer mapRenderer;
+	public Navigation Navigation;
+
+	public Dictionary<Citizen, Vector2> Citmap;
+
+
+>>>>>>> 7f7ad307fc571a56b895fa7c00188e7be04a1bef
 	int mode=0;
 	
 	void Start()
@@ -96,6 +106,20 @@ public class GameManager : MonoBehaviour
 			}
 		}
 	}
+<<<<<<< HEAD
+=======
+
+	public int GetCitizensCount(Vector2 pos)
+	{ 
+		int count = 0;
+		foreach (Citizen citizen in Citmap.Keys)
+		{
+			if(Citmap[citizen]==pos)
+				count++;
+		}
+		return count;
+	}
+>>>>>>> 7f7ad307fc571a56b895fa7c00188e7be04a1bef
 	
 	//<summary>导航</summary>
 	public List<visPoint> Navigate(Vector2 start,Vector2 end)
@@ -288,6 +312,7 @@ public class GameManager : MonoBehaviour
 				{
 					//Instantiate(Building,new Vector3(Mathf.Floor(hit.point.x),0,Mathf.Floor(hit.point.z)),Quaternion.identity);
 					Vector2 p =new Vector2(Mathf.Floor(hit.point.z),Mathf.Floor(hit.point.x));
+<<<<<<< HEAD
 					if(GetCloseToRoad(p)!=new Vector2(-1,-1))
 					{
 						map[p].zoneType = (ZoneType)order;
@@ -301,6 +326,10 @@ public class GameManager : MonoBehaviour
 							DistributeRandomWork(Citizens.Count-1);
 						}
 					}
+=======
+					if(Rmap.ContainsKey(p))
+						map[p].zoneType = ZoneType.LowRes;
+>>>>>>> 7f7ad307fc571a56b895fa7c00188e7be04a1bef
 				}
 			}
 		}
