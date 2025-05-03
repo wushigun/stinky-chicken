@@ -109,6 +109,8 @@ public class Navigation : MonoBehaviour
     public List<visPoint> GetPath(Dictionary<visPoint, visPoint> parentDictionary,visPoint end,visPoint start)
     {
         List<visPoint> path = new List<visPoint>();
+		if(!parentDictionary.ContainsKey(end))
+			return null;
         visPoint vp = parentDictionary[end];
         while (parentDictionary.ContainsKey(vp))
         { 

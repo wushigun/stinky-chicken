@@ -26,10 +26,10 @@ public enum TerrainType : byte
 }
 public enum ZoneType : byte
 {
-    Null,
-    LowRes,//Resident
-    MidRes,
-    HiRes,
+    Null,            //0
+    LowRes,//Resident//1
+    MidRes,          //2
+    HiRes,           //3
     LowServ,
     MidServ,
     LowOffice,

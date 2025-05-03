@@ -9,11 +9,14 @@ public class GameManager : MonoBehaviour
 	public Dictionary<Vector2,RoadTile> Rmap = new Dictionary<Vector2,RoadTile>();
 	public int width,height;
 	public Color RRoad,DRoad,LRoad,URoad,nRoad;
-	public Color Resident;
+	public Color Resident,Industry;
 	public Renderer mapRenderer;
 	public Navigation Navigation;
 	
+	public List<Citizen> Citizens = new List<Citizen>();
+	
 	int mode=0;
+	
 	void Start()
 	{
 		for(int i=0;i<width;i++)
@@ -26,6 +29,7 @@ public class GameManager : MonoBehaviour
 		}//init map info
 	}
 	Vector2 before;
+	float time = 0;
     public void Update()
 	{
 		switch(mode)
@@ -35,26 +39,69 @@ public class GameManager : MonoBehaviour
 				BuildRoad();
 				DestroyRoad();
 				break;
-			case 1:
-				BuildZone();
-				DestroyZone();
+			default:
+				ChangeZone(mode-1);
+				CancleZone(mode-1);
 				break;
+		}
+		if(time >= 2f)
+		{
+			ChangeCitizenState();
+			time = 0;
+		}
+		DrawMap();
+		DebugAmount();
+		time += Time.deltaTime;
+	}
+	
+	//Bug:无法在先放住宅后再放工业来寻路
+	//Bug:无法到达正确的位置，卡在路中间
+	public void ChangeCitizenState()
+	{
+		for(int i = 0;i<Citizens.Count;i++)
+		{
+			switch(Citizens[i].purpose)
+			{
+				case purpose.Work:
+					if(Citizens[i].workPlace!=new Vector2(-1,-1))
+					{
+						List<visPoint> path = Navigate(
+						Citizens[i].pos,Citizens[i].workPlace);
+						if(path!=null && path.Count>=2){
+							Citizens[i].pos = path[path.Count-2].pos;
+						}
+						else
+							Citizens[i].purpose=purpose.Rest;
+					}
+					else
+					{
+						DistributeRandomWork(i);
+					}
+					break;
+				case purpose.Rest:
+					if(Citizens[i].homePlace!=new Vector2(-1,-1))
+					{
+						List<visPoint> path = Navigate(
+						Citizens[i].pos,Citizens[i].homePlace);
+						if(path!=null && path.Count>=2)
+							Citizens[i].pos = path[path.Count-2].pos;
+						else
+							Citizens[i].purpose=purpose.Work;
+					}
+					else
+					{
+						DistributeRandomHome(i);
+					}
+					break;
+			}
 		}
 	}
 	
-	
 	//<summary>导航</summary>
-	public void Navigate()
+	public List<visPoint> Navigate(Vector2 start,Vector2 end)
 	{
 		Navigation.UpdatePoints(Rmap);
-		List<visPoint> path = Navigation.SearchPath(Vector2.zero,new(width-1,height-1));
-		if(path!=null)
-		{
-			for(int i = 0;i<path.Count;i++)
-			{
-				Debug.Log(path[i].pos.x.ToString()+","+path[i].pos.y.ToString());
-			}
-		}
+		return Navigation.SearchPath(start,end);
 	}
 	
 	//<summary>绘制地图</summary>
@@ -87,6 +134,8 @@ public class GameManager : MonoBehaviour
 						colorMap[i*width+j] = nRoad;
 					if(map[p].zoneType==ZoneType.LowRes)
 						colorMap[i*width+j]=Resident;
+					if(map[p].zoneType==ZoneType.LowInd)
+						colorMap[i*width+j]=Industry;
 				}
 			}
 		}
@@ -149,6 +198,39 @@ public class GameManager : MonoBehaviour
 		}
 	}
 	
+	public void DistributeRandomWork(int order)
+	{
+		List<Vector2> Ind = FindZoneType(ZoneType.LowInd);
+		if(Ind.Count<=0)
+		{
+			Citizens[order].workPlace = new Vector2(-1,-1);
+			return;
+		}
+		Citizens[order].workPlace = GetCloseToRoad(Ind[Random.Range(0,Ind.Count)]);
+	}
+	
+	public void DistributeRandomHome(int order)
+	{
+		List<Vector2> Res = FindZoneType(ZoneType.LowRes);
+		if(Res.Count<=0)
+		{
+			Citizens[order].homePlace = new Vector2(-1,-1);
+			return;
+		}
+		Citizens[order].homePlace = GetCloseToRoad(Res[Random.Range(0,Res.Count)]);
+	}
+	
+	public List<Vector2> FindZoneType(ZoneType zt)
+	{
+		List<Vector2> zone = new List<Vector2>();
+		foreach(Vector2 t in map.Keys)
+		{
+			if(map[t].zoneType == zt)
+				zone.Add(t);
+		}
+		return zone;
+	}
+	
 	//<summary>毁路</summary>
 	public void DestroyRoad()
 	{
@@ -179,8 +261,22 @@ public class GameManager : MonoBehaviour
 		}
 	}
 	
-	//<summary>规划(低)住宅区</summary>
-	public void BuildZone()
+	//获取靠近的路面
+	public Vector2 GetCloseToRoad(Vector2 pos)
+	{
+		if(Rmap.ContainsKey(pos+Vector2.right))
+			return pos+Vector2.right;
+		if(Rmap.ContainsKey(pos+Vector2.down))
+			return pos+Vector2.down;
+		if(Rmap.ContainsKey(pos+Vector2.up))
+			return pos+Vector2.up;
+		if(Rmap.ContainsKey(pos+Vector2.left))
+			return pos+Vector2.left;
+		return new Vector2(-1,-1);
+	}
+	
+	//<summary>规划区域</summary>
+	public void ChangeZone(int order)
 	{
 		if(Input.GetMouseButton(0))
 		{
@@ -192,14 +288,26 @@ public class GameManager : MonoBehaviour
 				{
 					//Instantiate(Building,new Vector3(Mathf.Floor(hit.point.x),0,Mathf.Floor(hit.point.z)),Quaternion.identity);
 					Vector2 p =new Vector2(Mathf.Floor(hit.point.z),Mathf.Floor(hit.point.x));
-					map[p].zoneType = ZoneType.LowRes;
+					if(GetCloseToRoad(p)!=new Vector2(-1,-1))
+					{
+						map[p].zoneType = (ZoneType)order;
+						if((ZoneType)order==ZoneType.LowRes)
+						{
+							Citizen c = new Citizen();
+							c.pos = GetCloseToRoad(p);
+							c.purpose = purpose.Work;
+							c.homePlace = GetCloseToRoad(p);
+							Citizens.Add(c);
+							DistributeRandomWork(Citizens.Count-1);
+						}
+					}
 				}
 			}
 		}
 	}
 	
 	//<summary>取消规划</summary>
-	public void DestroyZone()
+	public void CancleZone(int order)
 	{
 		if(Input.GetMouseButton(1))
 		{
@@ -217,7 +325,33 @@ public class GameManager : MonoBehaviour
 		}
 	}
 	
-	//0--道路 1--住宅
+	public int Statistics(Vector2 pos)
+	{
+		int count = 0;
+		foreach(Citizen Cit in Citizens)
+		{
+			if(Cit.pos == pos)
+				count++;
+		}
+		return count;
+	}
+	
+	public void DebugAmount()
+	{
+		Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+		RaycastHit hit;
+		if(Physics.Raycast(ray,out hit))
+		{
+			if(hit.collider.gameObject.tag=="map")
+			{
+				//Instantiate(Building,new Vector3(Mathf.Floor(hit.point.x),0,Mathf.Floor(hit.point.z)),Quaternion.identity);
+				Vector2 p =new Vector2(Mathf.Floor(hit.point.z),Mathf.Floor(hit.point.x));
+				Debug.Log(Statistics(p));
+			}
+		}
+	}
+	
+	//0--道路 n--第n-1个区域
 	public void changeBuildMode(int order)
 	{
 		mode = order;
